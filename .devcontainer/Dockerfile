@@ -10,9 +10,11 @@ RUN wget https://storage.googleapis.com/flutter_infra_release/releases/stable/li
 
 ENV PATH="/opt/flutter/bin:${PATH}"
 
-# Switch to non-root user and change ownership of Flutter directory
+# Change ownership of Flutter directory to vscode user
+RUN chown -R vscode:vscode /opt/flutter
+
+# Switch to non-root user
 USER vscode
-RUN sudo chown -R vscode:vscode /opt/flutter
 
 # Add Flutter directory to Git's safe directories for the vscode user
 RUN git config --global --add safe.directory /opt/flutter
