@@ -1,8 +1,9 @@
 {
   "name": "Flutter Web App Development",
-  "image": "mcr.microsoft.com/devcontainers/universal:latest",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "features": {
-    
     "ghcr.io/devcontainers/features/common-utils:2": {
       "installZsh": true,
       "installOhMyZsh": true,
@@ -10,7 +11,7 @@
     }
   },
   "forwardPorts": [8080],
-  "postCreateCommand": "wget https://storage.googleapis.com/flutter_releases/releases/stable/linux/flutter_linux_3.22.2-stable.tar.xz && tar xf flutter_linux_3.22.2-stable.tar.xz && export PATH=\"$PATH:`pwd`/flutter/bin\" && flutter doctor && flutter precache",
+  "postCreateCommand": "flutter precache",
   "customizations": {
     "vscode": {
       "extensions": [
