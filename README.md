@@ -49,3 +49,31 @@ To configure Cline with an OpenAI compatible API, you will need to do so through
 
 **For Planning:**
 - `Qwen/Qwen3-235B-A22B-Thinking-2507` (Context Length: 262,144 tokens)
+
+## Using this Repository as a Template
+
+This repository is configured as a GitHub Template, allowing other users to easily create their own repositories with this Codespace setup.
+
+To use this template and set up your own Codespace prebuilds:
+
+1.  **Create a New Repository from this Template**:
+    - Go to this repository on GitHub.
+    - Click the green "Use this template" button to create a new repository in your own GitHub account.
+
+2.  **Enable Codespaces for Your New Repository**:
+    - In your newly created repository, navigate to `Settings` > `Codespaces`.
+    - Enable Codespaces for that repository.
+
+3.  **Configure Prebuilds for Your New Repository**:
+    - Still in `Settings` > `Codespaces` for your new repository, you can now configure prebuilds.
+    - Since this template includes the `.devcontainer` folder with the `Dockerfile` and `devcontainer.json`, all the necessary instructions for building the environment (Flutter, extensions, etc.) are already provided.
+    - Enable prebuilds for your desired branches (e.g., `main`) and set the update frequency. This will build and store prebuilt images in your own account, significantly speeding up subsequent Codespace creations.
+
+## Billing
+
+GitHub Codespaces offers a free tier for individual users. For personal GitHub Free accounts, the monthly free usage includes:
+
+-   **120 core hours** (or 60 hours of runtime on a 2-core codespace).
+-   **15 GB of storage**.
+
+This storage limit includes the space consumed by prebuilt images. If you exceed these limits, you will be charged on a pay-as-you-go basis. You can set a spending limit in your GitHub account settings to avoid unexpected charges.
