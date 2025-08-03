@@ -11,7 +11,7 @@
     }
   },
   "forwardPorts": [8080],
-  "postCreateCommand": "flutter precache",
+  "postCreateCommand": "",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -21,7 +21,35 @@
         "saoudrizwan.claude-dev"
       ],
       "settings": {
-        "your.cline.model.setting.key": "your-model-name"
+        "editor.tabSize": 2,
+        "editor.rulers": [
+          80
+        ],
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.selectionHighlight": false,
+        "editor.suggestSelection": "first",
+        "editor.wordBasedSuggestions": false,
+        "editor.parameterHints.enabled": false,
+        "editor.semanticHighlighting.enabled": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "files.eol": "\n",
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true,
+        "files.associations": {
+          "*.dart": "dart"
+        },
+        "dart.lineLength": 80,
+        "dart.enableSdkFormatter": true,
+        "dart.debugSdkLibraries": false,
+        "dart.debugExternalLibraries": false,
+        "dart.flutterSdkPath": "/opt/flutter",
+        "dart.flutterRunAdditionalArgs": [
+          "--web-port",
+          "8080",
+          "--web-hostname",
+          "0.0.0.0"
+        ]
       }
     }
   }
