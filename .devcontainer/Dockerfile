@@ -32,5 +32,12 @@ RUN flutter precache
 # Run flutter doctor to download dependencies and verify installation
 RUN flutter doctor
 
+# Update the permission again for .dart_tools
+USER root
 
+RUN chown -R 1000:1000 /opt/flutter
+RUN chmod -R a+rw /opt/flutter 
+
+# Switch to non-root user
+USER ${_REMOTE_USER}
 
