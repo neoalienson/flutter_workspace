@@ -19,12 +19,12 @@ RUN chmod -R a+rw /opt/flutter
 # Switch to non-root user
 USER ${_REMOTE_USER}
 
+# Add Flutter directory to Git's safe directories for the vscode user
+RUN git config --global --add safe.directory /opt/flutter
+
 # Disable Linux and Android desktop development
 RUN flutter config --no-enable-linux-desktop
 RUN flutter config --no-enable-android
-
-# Add Flutter directory to Git's safe directories for the vscode user
-RUN git config --global --add safe.directory /opt/flutter
 
 # Precache Flutter artifacts
 RUN flutter precache
