@@ -37,10 +37,13 @@ The application will be accessible on port 8080 (forwarded automatically).
 
 To configure Cline with an OpenAI compatible API, you will need to do so through the VS Code UI after the Codespace has launched. 
 
-1.  **Launch Codespace**: Open this repository in a GitHub Codespace.
-2.  **Open VS Code Settings**: Go to `File > Preferences > Settings` (or `Code > Preferences > Settings` on macOS).
-3.  **Search for Cline**: In the search bar, type "Cline" to filter the settings.
-4.  **Configure API Key and Model**: Use the provided fields to enter your API key and select your desired model. The base URL for the OpenAI compatible API is `https://api-inference.modelscope.cn/v1/`. Refer to Cline's official documentation for specific setting names and values.
+||||
+|---|---|---|
+|1.|  **Launch Codespace**: Open this repository in a GitHub Codespace. |
+|2.|  **Click the Cline extension**: The Cline extension icon takes minutes to show. Click on it after it is available|![](images/cline1.png)|
+|3.|  **Click Use your own API key**:|![](images/cline2.png)|
+|4.|  **Configure API Key and Model**: Use the provided fields to enter your API key and select your desired model. The base URL for the OpenAI compatible API is `https://api-inference.modelscope.cn/v1/`.|![](images/cline3.png)|
+|5.|  **Start the AI agentic jounery**|![](images/cline4.png)|
 
 ### Recommended Cline Models
 
