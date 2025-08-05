@@ -8,7 +8,10 @@ This GitHub Codespace is configured for Flutter web application development. It 
 
 ## Getting Started
 
-1.  **Launch Codespace**: Open this repository in a GitHub Codespace.
+1.  **Launch Codespace**: Open this repository in a GitHub Codespace by clicking the "Code" button and selecting "Create codespace on main".
+
+    ![Launching Codespace](images/open.png)
+
 2.  **Create/Open Flutter Project**: Once the Codespace is ready, you can create a new Flutter project or open an existing one.
     ```bash
     flutter create --platforms web my_web_app
@@ -71,9 +74,24 @@ To use this template and set up your own Codespace prebuilds:
 
 ## Billing
 
-GitHub Codespaces offers a free tier for individual users. For personal GitHub Free accounts, the monthly free usage includes:
+GitHub Codespaces offers a generous free tier for individual users. For personal GitHub Free accounts, the monthly free usage includes:
 
--   **120 core hours** (or 60 hours of runtime on a 2-core codespace).
--   **15 GB of storage**.
+-   **120 core hours** (or 60 hours of runtime on a 2-core codespace, 30 hours on a 4-core codespace, etc.).
+-   **15 GB of storage** (includes space for your codespace and prebuilt images).
 
-This storage limit includes the space consumed by prebuilt images. If you exceed these limits, you will be charged on a pay-as-you-go basis. You can set a spending limit in your GitHub account settings to avoid unexpected charges.
+**Core Hours Explanation:**
+Core hours are calculated based on the number of CPU cores your codespace uses. For example:
+- A 2-core codespace running for 1 hour = 2 core hours
+- A 4-core codespace running for 1 hour = 4 core hours
+
+**Storage Details:**
+The 15 GB storage limit includes:
+- Your codespace's file system
+- Prebuilt images
+- Cached dependencies
+
+If you exceed these limits, you will be charged on a pay-as-you-go basis:
+- **Core hours**: $0.18 per core hour
+- **Storage**: $0.07 per GB-month
+
+You can set a spending limit in your GitHub account settings to avoid unexpected charges. For GitHub Pro, Team, or Enterprise accounts, different pricing and limits may apply.
